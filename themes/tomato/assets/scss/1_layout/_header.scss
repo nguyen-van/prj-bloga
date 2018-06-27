@@ -1,0 +1,76 @@
+/*------------------------------------------------------------
+header
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+a{
+  text-decoration: none;
+}
+/*------------------------------------------------------------
+------------------------------------------------------------*/
+.c-header{
+	display: flex;
+	justify-content: center;
+	margin: 25px auto;
+	width: 1000px;
+}
+/*------------------------------------------------------------
+------------------------------------------------------------*/
+.c-header1{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+/*------------------------------------------------------------
+------------------------------------------------------------*/
+.c-logo{
+	text-align: left;
+	vertical-align: middle;
+	width: 170px;
+	.c-entry {
+		align-items: center;
+		align-content: center;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 170px;
+		margin: 0 5px;
+		&__text {
+			color: #fff;
+			background-image: linear-gradient(to right, #f6d365 0%, #fda085 50%, #f6d365 100%);
+			background-size: 200% auto;
+			flex: 1 1 auto;
+			margin: 0 10px;
+			padding: 45px 30px 45px;
+			text-align: center;
+			transition: 0.5s;
+			position: relative;
+			&:before{
+				content: "";
+				position: absolute;
+				width: 0;
+				height: 0;
+				top: 0;
+				left: 0;
+				border-bottom: 135px solid transparent;
+				border-top: 0px solid transparent;
+				border-left: 75px solid #fff;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				width: 0;
+				height: 0;
+				top: 0;
+				right: 0;
+				border-bottom: 135px solid transparent;
+				border-top: 0px solid transparent;
+				border-right: 75px solid #fff;
+			}
+			&:hover {
+				background-position: right center;
+			}
+			}
+		}
+}

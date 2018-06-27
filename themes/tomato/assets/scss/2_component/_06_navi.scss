@@ -1,0 +1,72 @@
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-navbar{
+	display: table-cell;
+	text-align: right;
+	vertical-align: middle;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	ul{
+		list-style: none;
+		margin: 25px 0 0;
+		ul{
+			background-color: #edf8ff;
+			padding: 10px 10px;
+			margin: 0;
+			text-align: left;
+			width: 420px;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1002;
+			display: none;
+			text-transform: capitalize;
+			li{
+				margin: 0;
+				padding: 5px 15px;
+			}
+		}
+	}
+	ul > li{
+		display: inline-block;
+		position: relative;
+		padding: 10px 30px;
+		&:hover{
+			background: #ffeec2;
+			color: #afcae8;
+			transition: background .5s ease-in-out;
+			p{
+				transition: border .3s;
+				border-color: #000;
+			}
+		}
+	}
+	ul > li >a{
+		color: #000;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		img{
+			margin: 0 10px;
+		}
+		p{
+			font-size: 12px;
+			border-bottom: 1px solid transparent;
+		}
+	}
+	.c-toggle{
+		position: relative;
+		// background: #ebd8b0;
+		// background: #ffeec2;
+		&:hover{
+			ul{
+				display: block;
+				transition-delay:display 2s;
+			}
+		}
+	}
+}
